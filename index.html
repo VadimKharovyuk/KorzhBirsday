@@ -31,6 +31,160 @@
       color: var(--text-light);
     }
 
+    /* Навигация */
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: var(--primary-color);
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: var(--text-light);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
+    }
+
+    /* Иконка гамбургера для мобильных */
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .hamburger-menu div {
+      width: 30px;
+      height: 4px;
+      background-color: var(--text-light);
+    }
+
+    /* Хедер */
+    header {
+      padding-top: 100px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .header-content {
+      padding: 2rem;
+    }
+
+    .profile-image {
+      width: 600px;
+      height: 600px;
+      border-radius: 30%;
+      border: 4px solid var(--text-light);
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px var(--shadow-color);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--text-light), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-color);
+    }
+
+    /* Адаптивный дизайн для мобильных */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger-menu {
+        display: flex;
+      }
+
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      header {
+        padding-top: 80px;
+      }
+
+      .header-content {
+        padding: 1rem;
+      }
+
+      .profile-image {
+        width: 100%;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+
     /* Navigation */
     nav {
       position: fixed;
@@ -314,6 +468,11 @@
 <nav>
   <div class="nav-container">
     <div class="logo">9 Лютого</div>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <div class="nav-links">
       <a href="#header">Головна</a>
       <a href="#section1">Про тебе</a>
@@ -459,7 +618,7 @@
   </p>
   <p>
     З любов’ю і найщирішими побажаннями, нехай цей день стане ще одним кроком до великого та щасливого майбутнього! ❤️
-  </p>
+  </p><br><br><br><br>
 
   <div class="social-modal">
     <button class="close-modal">×</button>
@@ -507,6 +666,13 @@
       socialModal.classList.remove('active');
     }
   });
+</script>
+<!-- Скрипт для переключения меню -->
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
 </script>
 </body>
 </html>
