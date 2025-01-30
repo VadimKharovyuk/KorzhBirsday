@@ -1146,6 +1146,6 @@
         <button class="author-button">Мої контакти</button>
     </div>
 </footer>
-<script> // Показать/скрыть модальное окно const authorButton = document.querySelector('.author-button'); const socialModal = document.querySelector('.social-modal'); const closeModal = document.querySelector('.close-modal'); authorButton.addEventListener('click', () => { socialModal.classList.add('active'); }); closeModal.addEventListener('click', () => { socialModal.classList.remove('active'); }); // Закрыть модальное окно при клике вне его window.addEventListener('click', (e) => { if (e.target === socialModal) { socialModal.classList.remove('active'); } }); // Скрипт для переключения меню function toggleMenu() { const navLinks = document.querySelector('.nav-links'); navLinks.classList.toggle('active'); } </script>
+<script> const authorButton = document.querySelector('.author-button'); const socialModal = document.querySelector('.social-modal'); const closeModal = document.querySelector('.close-modal'); authorButton.addEventListener('click', () => { socialModal.classList.add('active'); }); closeModal.addEventListener('click', () => { socialModal.classList.remove('active'); }); // Закрыть модальное окно при клике вне его window.addEventListener('click', (e) => { if (e.target === socialModal) { socialModal.classList.remove('active'); } }); // Скрипт для переключения меню function toggleMenu() { const navLinks = document.querySelector('.nav-links'); navLinks.classList.toggle('active'); } </script>
 </body>
 </html>
