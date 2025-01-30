@@ -236,14 +236,45 @@
       padding: 2rem;
     }
 
+    /*.profile-image {*/
+    /*  width: 450px;*/
+    /*  height: 450px;*/
+    /*  border-radius: 30%;*/
+    /*  border: 4px solid var(--text-light);*/
+    /*  margin-bottom: 2rem;*/
+    /*  box-shadow: 0 0 20px var(--shadow-color);*/
+    /*  transition: transform 0.3s ease;*/
+    /*}*/
     .profile-image {
-      width: 450px;
-      height: 450px;
-      border-radius: 30%;
-      border: 4px solid var(--text-light);
-      margin-bottom: 2rem;
-      box-shadow: 0 0 20px var(--shadow-color);
-      transition: transform 0.3s ease;
+        width: 550px;
+        height: 550px;
+        border-radius: 30%;
+        border: 4px solid var(--text-light);
+        margin-bottom: 2rem;
+        box-shadow: 0 0 20px var(--shadow-color);
+        transition: transform 0.3s ease;
+    }
+
+    /* Адаптив для устройств с шириной экрана до 768px (например, планшеты и мобильные устройства) */
+    @media (max-width: 768px) {
+        .profile-image {
+            width: 300px; /* Уменьшаем ширину */
+            height: 300px; /* Уменьшаем высоту */
+            border-radius: 20%; /* Меняем радиус скругления */
+            margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+            box-shadow: 0 0 10px var(--shadow-color); /* Уменьшаем тень */
+        }
+    }
+
+    /* Адаптив для устройств с шириной экрана до 480px (например, мобильные телефоны) */
+    @media (max-width: 480px) {
+        .profile-image {
+            width: 200px; /* Еще больше уменьшаем ширину */
+            height: 200px; /* Еще больше уменьшаем высоту */
+            border-radius: 15%; /* Меняем радиус скругления */
+            margin-bottom: 0.5rem; /* Уменьшаем отступ снизу */
+            box-shadow: 0 0 5px var(--shadow-color); /* Уменьшаем тень */
+        }
     }
 
     .profile-image:hover {
