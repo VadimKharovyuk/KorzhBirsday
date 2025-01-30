@@ -1,1171 +1,1171 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="ru">-->
-<!--<head>-->
-<!--  <meta charset="UTF-8">-->
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--  <title>С Днем Рождения!</title>-->
-<!--  <style>-->
-<!--    :root {-->
-<!--      &#45;&#45;primary-color: #2a3b4c;-->
-<!--      &#45;&#45;secondary-color: #3498db;-->
-<!--      &#45;&#45;accent-color: #e74c3c;-->
-<!--      &#45;&#45;text-light: #ffffff;-->
-<!--      &#45;&#45;text-dark: #333333;-->
-<!--      &#45;&#45;bg-dark: #1a1a1a;-->
-<!--      &#45;&#45;bg-light: #ffffff;-->
-<!--      &#45;&#45;gradient-start: #2c3e50;-->
-<!--      &#45;&#45;gradient-end: #3498db;-->
-<!--      &#45;&#45;hover-color: #e74c3c;-->
-<!--      &#45;&#45;shadow-color: rgba(0, 0, 0, 0.2);-->
-<!--    }-->
-
-<!--    * {-->
-<!--      margin: 0;-->
-<!--      padding: 0;-->
-<!--      box-sizing: border-box;-->
-<!--    }-->
-
-<!--    body {-->
-<!--      font-family: 'Arial', sans-serif;-->
-<!--      background-color: var(&#45;&#45;bg-dark);-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--    }-->
-
-<!--    /* Навигация */-->
-<!--    nav {-->
-<!--      position: fixed;-->
-<!--      width: 100%;-->
-<!--      background-color: var(&#45;&#45;primary-color);-->
-<!--      padding: 1rem;-->
-<!--      z-index: 1000;-->
-<!--      box-shadow: 0 2px 10px var(&#45;&#45;shadow-color);-->
-<!--    }-->
-
-<!--    .nav-container {-->
-<!--      max-width: 1200px;-->
-<!--      margin: 0 auto;-->
-<!--      display: flex;-->
-<!--      justify-content: space-between;-->
-<!--      align-items: center;-->
-<!--    }-->
-
-<!--    .logo {-->
-<!--      font-size: 1.5rem;-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--    }-->
-
-<!--    .nav-links {-->
-<!--      display: flex;-->
-<!--      gap: 2rem;-->
-<!--    }-->
-
-<!--    .nav-links a {-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      text-decoration: none;-->
-<!--      padding: 0.5rem 1rem;-->
-<!--      border-radius: 4px;-->
-<!--      transition: all 0.3s ease;-->
-<!--    }-->
-
-<!--    .nav-links a:hover {-->
-<!--      background-color: var(&#45;&#45;hover-color);-->
-<!--      transform: translateY(-2px);-->
-<!--    }-->
-
-<!--    /* Иконка гамбургера для мобильных */-->
-<!--    .hamburger-menu {-->
-<!--      display: none;-->
-<!--      cursor: pointer;-->
-<!--      flex-direction: column;-->
-<!--      gap: 5px;-->
-<!--    }-->
-
-<!--    .hamburger-menu div {-->
-<!--      width: 30px;-->
-<!--      height: 4px;-->
-<!--      background-color: var(&#45;&#45;text-light);-->
-<!--    }-->
-
-<!--    /* Хедер */-->
-<!--    header {-->
-<!--      padding-top: 100px;-->
-<!--      min-height: 100vh;-->
-<!--      background: linear-gradient(135deg, var(&#45;&#45;gradient-start), var(&#45;&#45;gradient-end));-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--      justify-content: center;-->
-<!--      text-align: center;-->
-<!--    }-->
-
-<!--    .header-content {-->
-<!--      padding: 2rem;-->
-<!--    }-->
-
-<!--    .profile-image {-->
-<!--      width: 600px;-->
-<!--      height: 600px;-->
-<!--      border-radius: 30%;-->
-<!--      border: 4px solid var(&#45;&#45;text-light);-->
-<!--      margin-bottom: 2rem;-->
-<!--      box-shadow: 0 0 20px var(&#45;&#45;shadow-color);-->
-<!--      transition: transform 0.3s ease;-->
-<!--    }-->
-
-<!--    .profile-image:hover {-->
-<!--      transform: scale(1.1);-->
-<!--    }-->
-
-<!--    h1 {-->
-<!--      font-size: 3rem;-->
-<!--      margin-bottom: 1rem;-->
-<!--      background: linear-gradient(45deg, var(&#45;&#45;text-light), var(&#45;&#45;secondary-color));-->
-<!--      -webkit-background-clip: text;-->
-<!--      -webkit-text-fill-color: transparent;-->
-<!--    }-->
-
-<!--    h2 {-->
-<!--      font-size: 2.5rem;-->
-<!--      margin-bottom: 1.5rem;-->
-<!--      color: var(&#45;&#45;secondary-color);-->
-<!--    }-->
-
-<!--    /* Адаптивный дизайн для мобильных */-->
-<!--    @media (max-width: 768px) {-->
-<!--      .nav-links {-->
-<!--        display: none;-->
-<!--      }-->
-
-<!--      .hamburger-menu {-->
-<!--        display: flex;-->
-<!--      }-->
-
-<!--      .nav-links.active {-->
-<!--        display: flex;-->
-<!--        flex-direction: column;-->
-<!--        gap: 1rem;-->
-<!--        position: absolute;-->
-<!--        top: 60px;-->
-<!--        right: 10px;-->
-<!--        background-color: var(&#45;&#45;primary-color);-->
-<!--        padding: 1rem;-->
-<!--        border-radius: 8px;-->
-<!--      }-->
-
-<!--      header {-->
-<!--        padding-top: 80px;-->
-<!--      }-->
-
-<!--      .header-content {-->
-<!--        padding: 1rem;-->
-<!--      }-->
-
-<!--      .profile-image {-->
-<!--        width: 100%;-->
-<!--        height: auto;-->
-<!--      }-->
-
-<!--      h1 {-->
-<!--        font-size: 2.5rem;-->
-<!--      }-->
-
-<!--      h2 {-->
-<!--        font-size: 2rem;-->
-<!--      }-->
-<!--    }-->
-
-<!--    * {-->
-<!--      margin: 0;-->
-<!--      padding: 0;-->
-<!--      box-sizing: border-box;-->
-<!--    }-->
-
-<!--    body {-->
-<!--      font-family: 'Arial', sans-serif;-->
-<!--      background-color: var(&#45;&#45;bg-dark);-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--    }-->
-
-<!--    /* Navigation */-->
-<!--    nav {-->
-<!--      position: fixed;-->
-<!--      width: 100%;-->
-<!--      background-color: var(&#45;&#45;primary-color);-->
-<!--      padding: 1rem;-->
-<!--      z-index: 1000;-->
-<!--      box-shadow: 0 2px 10px var(&#45;&#45;shadow-color);-->
-<!--    }-->
-
-<!--    .nav-container {-->
-<!--      max-width: 1200px;-->
-<!--      margin: 0 auto;-->
-<!--      display: flex;-->
-<!--      justify-content: space-between;-->
-<!--      align-items: center;-->
-<!--    }-->
-
-<!--    .nav-links {-->
-<!--      display: flex;-->
-<!--      gap: 2rem;-->
-<!--    }-->
-
-<!--    .nav-links a {-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      text-decoration: none;-->
-<!--      padding: 0.5rem 1rem;-->
-<!--      border-radius: 4px;-->
-<!--      transition: all 0.3s ease;-->
-<!--    }-->
-
-<!--    .nav-links a:hover {-->
-<!--      background-color: var(&#45;&#45;hover-color);-->
-<!--      transform: translateY(-2px);-->
-<!--    }-->
-
-<!--    /* Header */-->
-<!--    header {-->
-<!--      padding-top: 100px;-->
-<!--      min-height: 100vh;-->
-<!--      background: linear-gradient(135deg, var(&#45;&#45;gradient-start), var(&#45;&#45;gradient-end));-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--      justify-content: center;-->
-<!--      text-align: center;-->
-<!--    }-->
-
-<!--    .header-content {-->
-<!--      padding: 2rem;-->
-<!--    }-->
-
-<!--    .profile-image {-->
-<!--      width: 600px;-->
-<!--      height: 600px;-->
-<!--      border-radius: 30%;-->
-<!--      border: 4px solid var(&#45;&#45;text-light);-->
-<!--      margin-bottom: 2rem;-->
-<!--      box-shadow: 0 0 20px var(&#45;&#45;shadow-color);-->
-<!--      transition: transform 0.3s ease;-->
-<!--    }-->
-
-<!--    .profile-image:hover {-->
-<!--      transform: scale(1.1);-->
-<!--    }-->
-
-<!--    /* Sections */-->
-<!--    section {-->
-<!--      padding: 4rem 2rem;-->
-<!--      min-height: 100vh;-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--    }-->
-
-<!--    .section-container {-->
-<!--      max-width: 1200px;-->
-<!--      margin: 0 auto;-->
-<!--      background-color: var(&#45;&#45;primary-color);-->
-<!--      border-radius: 10px;-->
-<!--      padding: 2rem;-->
-<!--      box-shadow: 0 5px 15px var(&#45;&#45;shadow-color);-->
-<!--      transition: transform 0.3s ease;-->
-<!--    }-->
-
-<!--    .section-container:hover {-->
-<!--      transform: translateY(-10px);-->
-<!--    }-->
-
-<!--    .section-content {-->
-<!--      display: grid;-->
-<!--      grid-template-columns: 1fr 1fr;-->
-<!--      gap: 2rem;-->
-<!--      align-items: center;-->
-<!--    }-->
-
-<!--    .section-image {-->
-<!--      width: 100%;-->
-<!--      border-radius: 10px;-->
-<!--      transition: transform 0.3s ease;-->
-<!--    }-->
-
-<!--    .section-image:hover {-->
-<!--      transform: scale(1.05);-->
-<!--    }-->
-
-<!--    h1 {-->
-<!--      font-size: 3rem;-->
-<!--      margin-bottom: 1rem;-->
-<!--      background: linear-gradient(45deg, var(&#45;&#45;text-light), var(&#45;&#45;secondary-color));-->
-<!--      -webkit-background-clip: text;-->
-<!--      -webkit-text-fill-color: transparent;-->
-<!--    }-->
-
-<!--    h2 {-->
-<!--      font-size: 2.5rem;-->
-<!--      margin-bottom: 1.5rem;-->
-<!--      color: var(&#45;&#45;secondary-color);-->
-<!--    }-->
-
-<!--    p {-->
-<!--      line-height: 1.6;-->
-<!--      margin-bottom: 1rem;-->
-<!--    }-->
-
-<!--    /* Footer and Social Modal */-->
-<!--    footer {-->
-<!--      background-color: var(&#45;&#45;primary-color);-->
-<!--      padding: 2rem;-->
-<!--      text-align: center;-->
-<!--      position: relative;-->
-<!--    }-->
-
-<!--    .social-modal {-->
-<!--      display: none;-->
-<!--      position: fixed;-->
-<!--      top: 50%;-->
-<!--      left: 50%;-->
-<!--      transform: translate(-50%, -50%);-->
-<!--      background-color: var(&#45;&#45;primary-color);-->
-<!--      padding: 2rem;-->
-<!--      border-radius: 10px;-->
-<!--      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);-->
-<!--      z-index: 1000;-->
-<!--      max-width: 90%;-->
-<!--      width: 400px;-->
-<!--    }-->
-
-<!--    .social-modal.active {-->
-<!--      display: block;-->
-<!--    }-->
-
-<!--    .close-modal {-->
-<!--      position: absolute;-->
-<!--      top: 10px;-->
-<!--      right: 10px;-->
-<!--      background: none;-->
-<!--      border: none;-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      font-size: 24px;-->
-<!--      cursor: pointer;-->
-<!--      padding: 5px 10px;-->
-<!--    }-->
-
-<!--    .social-links-grid {-->
-<!--      display: grid;-->
-<!--      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));-->
-<!--      gap: 1rem;-->
-<!--      margin-top: 1rem;-->
-<!--    }-->
-
-<!--    .social-link-item {-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--      padding: 1rem;-->
-<!--      background-color: rgba(255, 255, 255, 0.1);-->
-<!--      border-radius: 8px;-->
-<!--      text-decoration: none;-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      transition: all 0.3s ease;-->
-<!--    }-->
-
-<!--    .social-link-item:hover {-->
-<!--      background-color: var(&#45;&#45;hover-color);-->
-<!--      transform: translateY(-3px);-->
-<!--    }-->
-
-<!--    .social-icon {-->
-<!--      font-size: 1.5rem;-->
-<!--      margin-right: 0.5rem;-->
-<!--    }-->
-
-<!--    .social-text {-->
-<!--      font-size: 1rem;-->
-<!--    }-->
-
-<!--    .author-signature {-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--      justify-content: center;-->
-<!--      gap: 1rem;-->
-<!--      margin-top: 1rem;-->
-<!--    }-->
-
-<!--    .author-icon {-->
-<!--      font-size: 1.5rem;-->
-<!--    }-->
-
-<!--    .author-text {-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--    }-->
-
-<!--    .author-button {-->
-<!--      background-color: var(&#45;&#45;secondary-color);-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      border: none;-->
-<!--      padding: 0.5rem 1rem;-->
-<!--      border-radius: 5px;-->
-<!--      cursor: pointer;-->
-<!--      transition: all 0.3s ease;-->
-<!--    }-->
-
-<!--    .author-button:hover {-->
-<!--      background-color: var(&#45;&#45;hover-color);-->
-<!--      transform: translateY(-2px);-->
-<!--    }-->
-
-<!--    /* Responsive Design */-->
-<!--    @media (max-width: 768px) {-->
-<!--      .nav-links {-->
-<!--        display: none;-->
-<!--      }-->
-
-<!--      .section-content {-->
-<!--        grid-template-columns: 1fr;-->
-<!--        text-align: center;-->
-<!--      }-->
-
-<!--      .section-image {-->
-<!--        margin: 2rem 0;-->
-<!--      }-->
-<!--    }-->
-
-<!--    /* Header Content Styles */-->
-<!--    .birthday-wish {-->
-<!--      margin-top: 2rem;-->
-<!--      font-size: 1.2rem;-->
-<!--      line-height: 1.8;-->
-<!--      color: var(&#45;&#45;text-light);-->
-<!--      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);-->
-<!--      animation: fadeIn 1.5s ease-out;-->
-<!--    }-->
-
-<!--    .birthday-wish p {-->
-<!--      margin: 0.5rem 0;-->
-<!--      opacity: 0;-->
-<!--      animation: slideIn 0.8s ease-out forwards;-->
-<!--    }-->
-
-<!--    .birthday-wish p:nth-child(1) { animation-delay: 0.2s; }-->
-<!--    .birthday-wish p:nth-child(2) { animation-delay: 0.4s; }-->
-<!--    .birthday-wish p:nth-child(3) { animation-delay: 0.6s; }-->
-<!--    .birthday-wish p:nth-child(4) { animation-delay: 0.8s; }-->
-<!--    .birthday-wish p:nth-child(5) { animation-delay: 1s; }-->
-
-<!--    @keyframes slideIn {-->
-<!--      from {-->
-<!--        opacity: 0;-->
-<!--        transform: translateY(20px);-->
-<!--      }-->
-<!--      to {-->
-<!--        opacity: 1;-->
-<!--        transform: translateY(0);-->
-<!--      }-->
-<!--    }-->
-
-<!--    section {-->
-<!--      animation: fadeIn 1s ease-out;-->
-<!--    }-->
-<!--  </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--<nav>-->
-<!--  <div class="nav-container">-->
-<!--    <div class="logo">9 Лютого</div>-->
-<!--    <div class="hamburger-menu" onclick="toggleMenu()">-->
-<!--      <div></div>-->
-<!--      <div></div>-->
-<!--      <div></div>-->
-<!--    </div>-->
-<!--    <div class="nav-links">-->
-<!--      <a href="#header">Головна</a>-->
-<!--      <a href="#section1">Про тебе</a>-->
-<!--      <a href="#section2">Досягнення</a>-->
-<!--      <a href="#section3">Спогади</a>-->
-<!--      <a href="#section4">Побажання</a>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</nav>-->
-
-<!--<header id="header">-->
-<!--  <div class="header-content">-->
-<!--    <img src="107920906_277357580238296_718421717253490684_n.jpg" alt="Фото именинника" class="profile-image">-->
-<!--    <h1>З Днем Народження!</h1>-->
-<!--    <p>Нехай цей день буде особливим і незабутнім!</p>-->
-<!--  </div>-->
-<!--</header>-->
-
-<!--<section id="section1">-->
-<!--  <div class="section-container">-->
-<!--    <h2>Про тебе</h2>-->
-<!--    <div class="section-content">-->
-<!--      <div>-->
-<!--        <p>-->
-<!--          Вячеслав, вітаємо тебе з Днем Народження! 🎉-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Як справжній Водолій, ти людина з великим серцем, неповторною харизмою та непохитною вірою у краще майбутнє.-->
-<!--          1994 рік подарував світу тебе — добру, щиру й неймовірно талановиту людину.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          У цей особливий день хочемо побажати тобі нескінченного щастя, міцного здоров'я та внутрішньої гармонії.-->
-<!--          Нехай зірки завжди допомагають тобі у здійсненні найсміливіших мрій і підтримують у найскладніші моменти життя.-->
-<!--          Як Водолій, ти завжди прагнеш до нового та цікавого — нехай ці прагнення приведуть тебе до неймовірних вершин і подарують тобі незабутні пригоди!-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Нехай цей рік принесе тобі лише радісні моменти, нові відкриття та безліч приводів для гордості.-->
-<!--          Друзі та близькі завжди будуть поруч, підтримуючи тебе в кожному кроці.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Ти унікальний, Вячеслав! Нехай твоє життя буде наповнене теплом, любов'ю та справжнім щастям.-->
-<!--          Підкорюй цей світ своєю енергією, розумом і добротою. З Днем Народження! 🎂✨-->
-<!--        </p>-->
-<!--      </div>-->
-<!--      <img src="Unknown.jpg" alt="Фото 1" class="section-image">-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!--<section id="section2">-->
-<!--  <div class="section-container">-->
-<!--    <h2>Досягнення</h2>-->
-<!--    <div class="section-content">-->
-<!--      <img src="Unknown-4.jpg" alt="Фото 2" class="section-image">-->
-<!--      <div>-->
-<!--        <p>-->
-<!--          В’ячеславе, твоє головне досягнення — це, без сумніву, твоя чудова родина! ❤️-->
-<!--          Разом із прекрасною дружиною Анною ви створили затишний і теплий дім, сповнений любові, взаєморозуміння та радості.-->
-<!--          Ваш син Діма, який вже робить свої перші шкільні успіхи, — це відображення вашої турботи, мудрості та любові.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Родина — це не лише велике щастя, але й щоденна праця, терпіння та натхнення.-->
-<!--          Ти справляєшся з цим завданням як справжній лідер і приклад для своєї сім’ї. Твоя підтримка, відповідальність та любов роблять ваш дім місцем, де панує гармонія.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Нехай ваші сімейні узи з кожним роком стають лише міцнішими, а в домі завжди звучить сміх, щастя та радість.-->
-<!--          Нехай ваша родина завжди буде оточена теплом, а кожен новий день приносить яскраві спогади.-->
-<!--          Ти справжній герой для своїх близьких, В’ячеславе, і це твоє найбільше досягнення!-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Бажаємо тобі пишатися кожним моментом життя, адже твоя родина — це твоє найбільше багатство і натхнення.-->
-<!--          Щастя вам усім, нових успіхів і незабутніх моментів разом!-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!--<section id="section3">-->
-<!--  <div class="section-container">-->
-<!--    <h2>Спогади</h2>-->
-<!--    <div class="section-content">-->
-<!--      <div>-->
-<!--        <p>-->
-<!--          В’ячеславе, дитинство — це той час, який завжди гріє душу, і наші спільні спогади займають у ньому особливе місце.-->
-<!--          Ми разом ходили до школи, грали в різні дитячі ігри, і кожна наша пригода була незабутньою.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Як чудово було збиратися компанією, вирушати на річку в спекотні літні дні, радіти простим дрібницям і відчувати себе безтурботними.-->
-<!--          А дискотеки! Скільки веселих моментів, сміху і танців залишилися у наших спогадах. Це були часи, коли ми вчилися дружити, підтримувати одне одного і просто насолоджуватися життям.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Нехай ці спогади завжди залишаються теплом у твоєму серці і нагадують про ті щасливі моменти, які ми ділили разом.-->
-<!--          Бажаю, щоб твоє життя було сповнене нових яскравих подій, які в майбутньому стануть такими ж цінними спогадами для тебе.-->
-<!--          Твоє дитинство — це сторінка, яку неможливо забути, і я радий, що мав можливість бути її частиною.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          З Днем Народження, друже! Нехай твої майбутні дні будуть такими ж веселими та світлими, як наше дитинство.-->
-<!--        </p>-->
-<!--      </div>-->
-<!--      <img src="108832341_277196686921052_5536215817537767666_n.jpg" alt="Фото 3" class="section-image">-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!--<section id="section4">-->
-<!--  <div class="section-container">-->
-<!--    <h2>Побажання</h2>-->
-<!--    <div class="section-content">-->
-<!--      <img src="Unknown-3.jpg" alt="Фото 4" class="section-image">-->
-<!--      <div>-->
-<!--        <p>-->
-<!--          В’ячеславе, в цей особливий день хочеться побажати тобі всього найкращого, що може подарувати життя!-->
-<!--          Нехай здоров’я буде міцним, як скеля, щастя наповнює кожен твій день, а любов і підтримка близьких завжди будуть поруч.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Бажаю, щоб кожна твоя мрія ставала реальністю, а всі життєві дороги вели до успіху і нових досягнень.-->
-<!--          Нехай у твоєму домі завжди буде тепло, затишок і радість, а серце наповнюється гордістю за все, що ти вже досягнув і ще досягнеш.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          Хай кожен день приносить нові можливості, цікаві знайомства та радісні миті.-->
-<!--          Будь щасливим, цінуй кожну хвилину життя і пам’ятай, що ти оточений людьми, які тебе щиро люблять і поважають.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          З Днем Народження, В’ячеславе! Нехай у твоєму житті завжди буде місце для яскравих пригод, теплих зустрічей та невичерпного натхнення. 🎉-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-<!--<footer>-->
-<!--  <p>-->
-<!--    Дорогий В’ячеславе, нехай твоє життя буде наповнене яскравими моментами, значущими досягненнями та справжнім щастям!-->
-<!--    Став перед собою великі цілі, мрій сміливо та впевнено рухайся до їх досягнення. Пам’ятай, що найважливіше — залишатися добрим і щирим, адже саме це робить нас справжніми людьми.-->
-<!--  </p>-->
-<!--  <p>-->
-<!--    Будь люблячим і турботливим чоловіком, адже сім’я — це твоя найбільша сила та опора. Ставай найкращим прикладом для свого сина, показуючи йому, як важливо бути чесним, відповідальним і відданим своїм близьким.-->
-<!--  </p>-->
-<!--  <p>-->
-<!--    Цінуй кожну мить, проведену з тими, хто поруч, адже саме ці люди роблять твоє життя особливим. Нехай твоє серце завжди буде відкритим для добра, а душа — для нових звершень і натхнення.-->
-<!--    Нехай у твоєму житті завжди буде місце для радості, гармонії та любові.-->
-<!--  </p>-->
-<!--  <p>-->
-<!--    З любов’ю і найщирішими побажаннями, нехай цей день стане ще одним кроком до великого та щасливого майбутнього! ❤️-->
-<!--  </p><br><br><br><br>-->
-
-<!--  <div class="social-modal">-->
-<!--    <button class="close-modal">×</button>-->
-<!--    <h3 style="margin-bottom: 1rem; color: var(&#45;&#45;secondary-color);">Мої соціальні мережі</h3>-->
-<!--    <div class="social-links-grid">-->
-<!--      <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank" class="social-link-item">-->
-<!--        <span class="social-icon">📸</span>-->
-<!--        <span class="social-text">Instagram</span>-->
-<!--      </a>-->
-<!--      <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank" class="social-link-item">-->
-<!--        <span class="social-icon">👥</span>-->
-<!--        <span class="social-text">Facebook</span>-->
-<!--      </a>-->
-<!--      <a href="https://t.me/name_lucky_lucky" target="_blank" class="social-link-item">-->
-<!--        <span class="social-icon">✈️</span>-->
-<!--        <span class="social-text">Telegram</span>-->
-<!--      </a>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="author-signature">-->
-<!--    <span class="author-icon">👨‍💻</span>-->
-<!--    <span class="author-text">Created by Vadim Kharovyuk | 2025</span>-->
-<!--    <button class="author-button">Мої контакти</button>-->
-<!--  </div>-->
-<!--</footer>-->
-
-<!--<script>-->
-<!--  // Показать/скрыть модальное окно-->
-<!--  const authorButton = document.querySelector('.author-button');-->
-<!--  const socialModal = document.querySelector('.social-modal');-->
-<!--  const closeModal = document.querySelector('.close-modal');-->
-
-<!--  authorButton.addEventListener('click', () => {-->
-<!--    socialModal.classList.add('active');-->
-<!--  });-->
-
-<!--  closeModal.addEventListener('click', () => {-->
-<!--    socialModal.classList.remove('active');-->
-<!--  });-->
-
-<!--  // Закрыть модальное окно при клике вне его-->
-<!--  window.addEventListener('click', (e) => {-->
-<!--    if (e.target === socialModal) {-->
-<!--      socialModal.classList.remove('active');-->
-<!--    }-->
-<!--  });-->
-<!--</script>-->
-<!--&lt;!&ndash; Скрипт для переключения меню &ndash;&gt;-->
-<!--<script>-->
-<!--  function toggleMenu() {-->
-<!--    const navLinks = document.querySelector('.nav-links');-->
-<!--    navLinks.classList.toggle('active');-->
-<!--  }-->
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
-
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>С Днем Рождения!</title>
-    <style>
-        :root {
-            --primary-color: #1a1a1a; /* Темный фон */
-            --secondary-color: #1abc9c; /* Бирюзовый акцент */
-            --accent-color: #e74c3c; /* Красный для выделения */
-            --text-light: #ffffff; /* Белый текст */
-            --text-dark: #333333; /* Темный текст */
-            --bg-dark: #121212; /* Темный фон для body */
-            --bg-light: #ffffff; /* Светлый фон */
-            --gradient-start: #1a1a1a; /* Начало градиента */
-            --gradient-end: #1abc9c; /* Бирюзовый конец градиента */
-            --hover-color: #16a085; /* Темно-бирюзовый при наведении */
-            --shadow-color: rgba(0, 0, 0, 0.5); /* Тень */
-            --icon-color: #ffffff; /* Цвет иконок */
-            --icon-hover-color: #1abc9c; /* Бирюзовый при наведении на иконки */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С Днем Рождения!</title>
+  <style>
+    :root {
+      --primary-color: #2a3b4c;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+      --text-light: #ffffff;
+      --text-dark: #333333;
+      --bg-dark: #1a1a1a;
+      --bg-light: #ffffff;
+      --gradient-start: #2c3e50;
+      --gradient-end: #3498db;
+      --hover-color: #e74c3c;
+      --shadow-color: rgba(0, 0, 0, 0.2);
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-        }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
 
-        /* Навигация */
-        nav {
-            position: fixed;
-            width: 100%;
-            background-color: var(--primary-color);
-            padding: 1rem;
-            z-index: 1000;
-            box-shadow: 0 2px 10px var(--shadow-color);
-        }
+    /* Навигация */
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: var(--primary-color);
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .logo {
-            font-size: 1.5rem;
-            color: var(--text-light);
-        }
+    .logo {
+      font-size: 1.5rem;
+      color: var(--text-light);
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
 
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
 
-        .nav-links a:hover {
-            background-color: var(--hover-color);
-            transform: translateY(-2px);
-        }
+    .nav-links a:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
+    }
 
-        /* Иконки */
-        .nav-links a i {
-            color: var(--icon-color);
-            transition: color 0.3s ease;
-        }
+    /* Иконка гамбургера для мобильных */
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
 
-        .nav-links a:hover i {
-            color: var(--icon-hover-color);
-        }
+    .hamburger-menu div {
+      width: 30px;
+      height: 4px;
+      background-color: var(--text-light);
+    }
 
-        /* Хедер */
-        header {
-            padding-top: 100px;
-            min-height: 100vh;
-            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+    /* Хедер */
+    header {
+      padding-top: 100px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-        .header-content {
-            padding: 2rem;
-        }
+    .header-content {
+      padding: 2rem;
+    }
 
-        .profile-image {
-            width: 450px;
-            height: 450px;
-            border-radius: 30%;
-            border: 4px solid var(--text-light);
-            margin-bottom: 2rem;
-            box-shadow: 0 0 20px var(--shadow-color);
-            transition: transform 0.3s ease;
-        }
+    .profile-image {
+      width: 450px;
+      height: 450px;
+      border-radius: 30%;
+      border: 4px solid var(--text-light);
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px var(--shadow-color);
+      transition: transform 0.3s ease;
+    }
 
-        .profile-image:hover {
-            transform: scale(1.1);
-        }
+    .profile-image:hover {
+      transform: scale(1.1);
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, var(--text-light), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--text-light), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--secondary-color);
-        }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-color);
+    }
 
-        /* Секции */
-        section {
-            padding: 4rem 2rem;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
+    /* Адаптивный дизайн для мобильных */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
 
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: var(--primary-color);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px var(--shadow-color);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
+      .hamburger-menu {
+        display: flex;
+      }
 
-        .section-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
-            transition: left 0.5s ease;
-        }
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: 8px;
+      }
 
-        .section-container:hover::before {
-            left: 100%;
-        }
+      header {
+        padding-top: 80px;
+      }
 
-        .section-container:hover {
-            transform: translateY(-10px);
-        }
+      .header-content {
+        padding: 1rem;
+      }
 
-        .section-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
+      .profile-image {
+        width: 100%;
+        height: auto;
+      }
 
-        .section-image {
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
+      h1 {
+        font-size: 2.5rem;
+      }
 
-        .section-image:hover {
-            transform: scale(1.05);
-        }
+      h2 {
+        font-size: 2rem;
+      }
+    }
 
-        /* Футер и модальное окно */
-        footer {
-            background-color: var(--primary-color);
-            padding: 2rem;
-            text-align: center;
-            position: relative;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .social-modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: var(--primary-color);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            max-width: 90%;
-            width: 400px;
-        }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
 
-        .social-modal.active {
-            display: block;
-        }
+    /* Navigation */
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: var(--primary-color);
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
 
-        .close-modal {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            color: var(--text-light);
-            font-size: 24px;
-            cursor: pointer;
-            padding: 5px 10px;
-        }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .social-links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
 
-        .social-link-item {
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--text-light);
-            transition: all 0.3s ease;
-        }
+    .nav-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
 
-        .social-link-item:hover {
-            background-color: var(--hover-color);
-            transform: translateY(-3px);
-        }
+    .nav-links a:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
+    }
 
-        .social-icon {
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
-        }
+    /* Header */
+    header {
+      padding-top: 100px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-        .social-text {
-            font-size: 1rem;
-        }
+    .header-content {
+      padding: 2rem;
+    }
 
-        .author-signature {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
+    .profile-image {
+      width: 600px;
+      height: 600px;
+      border-radius: 30%;
+      border: 4px solid var(--text-light);
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px var(--shadow-color);
+      transition: transform 0.3s ease;
+    }
 
-        .author-icon {
-            font-size: 1.5rem;
-        }
+    .profile-image:hover {
+      transform: scale(1.1);
+    }
 
-        .author-text {
-            color: var(--text-light);
-        }
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
 
-        .author-button {
-            background-color: var(--secondary-color);
-            color: var(--text-light);
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: var(--primary-color);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px var(--shadow-color);
+      transition: transform 0.3s ease;
+    }
 
-        .author-button:hover {
-            background-color: var(--hover-color);
-            transform: translateY(-2px);
-        }
+    .section-container:hover {
+      transform: translateY(-10px);
+    }
 
-        /* Адаптивный дизайн */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
+    .section-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
 
-            .section-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
+    .section-image {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
 
-            .section-image {
-                margin: 2rem 0;
-            }
-        }
-    </style>
+    .section-image:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--text-light), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-color);
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer and Social Modal */
+    footer {
+      background-color: var(--primary-color);
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .social-modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--primary-color);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    .social-modal.active {
+      display: block;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .social-links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-link-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-light);
+      transition: all 0.3s ease;
+    }
+
+    .social-link-item:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-3px);
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .social-text {
+      font-size: 1rem;
+    }
+
+    .author-signature {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .author-icon {
+      font-size: 1.5rem;
+    }
+
+    .author-text {
+      color: var(--text-light);
+    }
+
+    .author-button {
+      background-color: var(--secondary-color);
+      color: var(--text-light);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .author-button:hover {
+      background-color: var(--hover-color);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .section-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .section-image {
+        margin: 2rem 0;
+      }
+    }
+
+    /* Header Content Styles */
+    .birthday-wish {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--text-light);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .birthday-wish p {
+      margin: 0.5rem 0;
+      opacity: 0;
+      animation: slideIn 0.8s ease-out forwards;
+    }
+
+    .birthday-wish p:nth-child(1) { animation-delay: 0.2s; }
+    .birthday-wish p:nth-child(2) { animation-delay: 0.4s; }
+    .birthday-wish p:nth-child(3) { animation-delay: 0.6s; }
+    .birthday-wish p:nth-child(4) { animation-delay: 0.8s; }
+    .birthday-wish p:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
 </head>
 <body>
 <nav>
-    <div class="nav-container">
-        <div class="logo">9 Лютого</div>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="nav-links">
-            <a href="#header"><i class="fas fa-home"></i> Головна</a>
-            <a href="#section1"><i class="fas fa-user"></i> Про тебе</a>
-            <a href="#section2"><i class="fas fa-trophy"></i> Досягнення</a>
-            <a href="#section3"><i class="fas fa-memory"></i> Спогади</a>
-            <a href="#section4"><i class="fas fa-gift"></i> Побажання</a>
-        </div>
+  <div class="nav-container">
+    <div class="logo">9 Лютого</div>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <div class="nav-links">
+      <a href="#header">Головна</a>
+      <a href="#section1">Про тебе</a>
+      <a href="#section2">Досягнення</a>
+      <a href="#section3">Спогади</a>
+      <a href="#section4">Побажання</a>
+    </div>
+  </div>
 </nav>
 
 <header id="header">
-    <div class="header-content">
-        <img src="107920906_277357580238296_718421717253490684_n.jpg" alt="Фото именинника" class="profile-image">
-        <h1>З Днем Народження!</h1>
-        <p>Нехай цей день буде особливим і незабутнім!</p>
-    </div>
+  <div class="header-content">
+    <img src="107920906_277357580238296_718421717253490684_n.jpg" alt="Фото именинника" class="profile-image">
+    <h1>З Днем Народження!</h1>
+    <p>Нехай цей день буде особливим і незабутнім!</p>
+  </div>
 </header>
 
 <section id="section1">
-    <div class="section-container">
-        <h2>Про тебе</h2>
-        <div class="section-content">
-            <div>
-                <p>
-                    Вячеслав, вітаємо тебе з Днем Народження! 🎉
-                </p>
-                <p>
-                    Як справжній Водолій, ти людина з великим серцем, неповторною харизмою та непохитною вірою у краще
-                    майбутнє.
-                    1994 рік подарував світу тебе — добру, щиру й неймовірно талановиту людину.
-                </p>
-                <p>
-                    У цей особливий день хочемо побажати тобі нескінченного щастя, міцного здоров'я та внутрішньої
-                    гармонії.
-                    Нехай зірки завжди допомагають тобі у здійсненні найсміливіших мрій і підтримують у найскладніші
-                    моменти життя.
-                    Як Водолій, ти завжди прагнеш до нового та цікавого — нехай ці прагнення приведуть тебе до
-                    неймовірних вершин і подарують тобі незабутні пригоди!
-                </p>
-                <p>
-                    Нехай цей рік принесе тобі лише радісні моменти, нові відкриття та безліч приводів для гордості.
-                    Друзі та близькі завжди будуть поруч, підтримуючи тебе в кожному кроці.
-                </p>
-                <p>
-                    Ти унікальний, Вячеслав! Нехай твоє життя буде наповнене теплом, любов'ю та справжнім щастям.
-                    Підкорюй цей світ своєю енергією, розумом і добротою. З Днем Народження! 🎂✨
-                </p>
-            </div>
-            <img src="Unknown.jpg" alt="Фото 1" class="section-image">
-        </div>
+  <div class="section-container">
+    <h2>Про тебе</h2>
+    <div class="section-content">
+      <div>
+        <p>
+          Вячеслав, вітаємо тебе з Днем Народження! 🎉
+        </p>
+        <p>
+          Як справжній Водолій, ти людина з великим серцем, неповторною харизмою та непохитною вірою у краще майбутнє.
+          1994 рік подарував світу тебе — добру, щиру й неймовірно талановиту людину.
+        </p>
+        <p>
+          У цей особливий день хочемо побажати тобі нескінченного щастя, міцного здоров'я та внутрішньої гармонії.
+          Нехай зірки завжди допомагають тобі у здійсненні найсміливіших мрій і підтримують у найскладніші моменти життя.
+          Як Водолій, ти завжди прагнеш до нового та цікавого — нехай ці прагнення приведуть тебе до неймовірних вершин і подарують тобі незабутні пригоди!
+        </p>
+        <p>
+          Нехай цей рік принесе тобі лише радісні моменти, нові відкриття та безліч приводів для гордості.
+          Друзі та близькі завжди будуть поруч, підтримуючи тебе в кожному кроці.
+        </p>
+        <p>
+          Ти унікальний, Вячеслав! Нехай твоє життя буде наповнене теплом, любов'ю та справжнім щастям.
+          Підкорюй цей світ своєю енергією, розумом і добротою. З Днем Народження! 🎂✨
+        </p>
+      </div>
+      <img src="Unknown.jpg" alt="Фото 1" class="section-image">
     </div>
+  </div>
 </section>
 
 <section id="section2">
-    <div class="section-container">
-        <h2>Досягнення</h2>
-        <div class="section-content">
-            <img src="Unknown-4.jpg" alt="Фото 2" class="section-image">
-            <div>
-                <p>
-                    В’ячеславе, твоє головне досягнення — це, без сумніву, твоя чудова родина! ❤️
-                    Разом із прекрасною дружиною Анною ви створили затишний і теплий дім, сповнений любові,
-                    взаєморозуміння та радості.
-                    Ваш син Діма, який вже робить свої перші шкільні успіхи, — це відображення вашої турботи, мудрості
-                    та любові.
-                </p>
-                <p>
-                    Родина — це не лише велике щастя, але й щоденна праця, терпіння та натхнення.
-                    Ти справляєшся з цим завданням як справжній лідер і приклад для своєї сім’ї. Твоя підтримка,
-                    відповідальність та любов роблять ваш дім місцем, де панує гармонія.
-                </p>
-                <p>
-                    Нехай ваші сімейні узи з кожним роком стають лише міцнішими, а в домі завжди звучить сміх, щастя та
-                    радість.
-                    Нехай ваша родина завжди буде оточена теплом, а кожен новий день приносить яскраві спогади.
-                    Ти справжній герой для своїх близьких, В’ячеславе, і це твоє найбільше досягнення!
-                </p>
-                <p>
-                    Бажаємо тобі пишатися кожним моментом життя, адже твоя родина — це твоє найбільше багатство і
-                    натхнення.
-                    Щастя вам усім, нових успіхів і незабутніх моментів разом!
-                </p>
-            </div>
-        </div>
+  <div class="section-container">
+    <h2>Досягнення</h2>
+    <div class="section-content">
+      <img src="Unknown-4.jpg" alt="Фото 2" class="section-image">
+      <div>
+        <p>
+          В’ячеславе, твоє головне досягнення — це, без сумніву, твоя чудова родина! ❤️
+          Разом із прекрасною дружиною Анною ви створили затишний і теплий дім, сповнений любові, взаєморозуміння та радості.
+          Ваш син Діма, який вже робить свої перші шкільні успіхи, — це відображення вашої турботи, мудрості та любові.
+        </p>
+        <p>
+          Родина — це не лише велике щастя, але й щоденна праця, терпіння та натхнення.
+          Ти справляєшся з цим завданням як справжній лідер і приклад для своєї сім’ї. Твоя підтримка, відповідальність та любов роблять ваш дім місцем, де панує гармонія.
+        </p>
+        <p>
+          Нехай ваші сімейні узи з кожним роком стають лише міцнішими, а в домі завжди звучить сміх, щастя та радість.
+          Нехай ваша родина завжди буде оточена теплом, а кожен новий день приносить яскраві спогади.
+          Ти справжній герой для своїх близьких, В’ячеславе, і це твоє найбільше досягнення!
+        </p>
+        <p>
+          Бажаємо тобі пишатися кожним моментом життя, адже твоя родина — це твоє найбільше багатство і натхнення.
+          Щастя вам усім, нових успіхів і незабутніх моментів разом!
+        </p>
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="section3">
-    <div class="section-container">
-        <h2>Спогади</h2>
-        <div class="section-content">
-            <div>
-                <p>
-                    В’ячеславе, дитинство — це той час, який завжди гріє душу, і наші спільні спогади займають у ньому
-                    особливе місце.
-                    Ми разом ходили до школи, грали в різні дитячі ігри, і кожна наша пригода була незабутньою.
-                </p>
-                <p>
-                    Як чудово було збиратися компанією, вирушати на річку в спекотні літні дні, радіти простим дрібницям
-                    і відчувати себе безтурботними.
-                    А дискотеки! Скільки веселих моментів, сміху і танців залишилися у наших спогадах. Це були часи,
-                    коли ми вчилися дружити, підтримувати одне одного і просто насолоджуватися життям.
-                </p>
-                <p>
-                    Нехай ці спогади завжди залишаються теплом у твоєму серці і нагадують про ті щасливі моменти, які ми
-                    ділили разом.
-                    Бажаю, щоб твоє життя було сповнене нових яскравих подій, які в майбутньому стануть такими ж цінними
-                    спогадами для тебе.
-                    Твоє дитинство — це сторінка, яку неможливо забути, і я радий, що мав можливість бути її частиною.
-                </p>
-                <p>
-                    З Днем Народження, друже! Нехай твої майбутні дні будуть такими ж веселими та світлими, як наше
-                    дитинство.
-                </p>
-            </div>
-            <img src="108832341_277196686921052_5536215817537767666_n.jpg" alt="Фото 3" class="section-image">
-        </div>
+  <div class="section-container">
+    <h2>Спогади</h2>
+    <div class="section-content">
+      <div>
+        <p>
+          В’ячеславе, дитинство — це той час, який завжди гріє душу, і наші спільні спогади займають у ньому особливе місце.
+          Ми разом ходили до школи, грали в різні дитячі ігри, і кожна наша пригода була незабутньою.
+        </p>
+        <p>
+          Як чудово було збиратися компанією, вирушати на річку в спекотні літні дні, радіти простим дрібницям і відчувати себе безтурботними.
+          А дискотеки! Скільки веселих моментів, сміху і танців залишилися у наших спогадах. Це були часи, коли ми вчилися дружити, підтримувати одне одного і просто насолоджуватися життям.
+        </p>
+        <p>
+          Нехай ці спогади завжди залишаються теплом у твоєму серці і нагадують про ті щасливі моменти, які ми ділили разом.
+          Бажаю, щоб твоє життя було сповнене нових яскравих подій, які в майбутньому стануть такими ж цінними спогадами для тебе.
+          Твоє дитинство — це сторінка, яку неможливо забути, і я радий, що мав можливість бути її частиною.
+        </p>
+        <p>
+          З Днем Народження, друже! Нехай твої майбутні дні будуть такими ж веселими та світлими, як наше дитинство.
+        </p>
+      </div>
+      <img src="108832341_277196686921052_5536215817537767666_n.jpg" alt="Фото 3" class="section-image">
     </div>
+  </div>
 </section>
 
 <section id="section4">
-    <div class="section-container">
-        <h2>Побажання</h2>
-        <div class="section-content">
-            <img src="Unknown-3.jpg" alt="Фото 4" class="section-image">
-            <div>
-                <p>
-                    В’ячеславе, в цей особливий день хочеться побажати тобі всього найкращого, що може подарувати життя!
-                    Нехай здоров’я буде міцним, як скеля, щастя наповнює кожен твій день, а любов і підтримка близьких
-                    завжди будуть поруч.
-                </p>
-                <p>
-                    Бажаю, щоб кожна твоя мрія ставала реальністю, а всі життєві дороги вели до успіху і нових
-                    досягнень.
-                    Нехай у твоєму домі завжди буде тепло, затишок і радість, а серце наповнюється гордістю за все, що
-                    ти вже досягнув і ще досягнеш. Нехай кожен день приносить нові можливості, цікаві знайомства та
-                    радісні миті. Будь щасливим, цінуй кожну хвилину життя і пам’ятай, що ти оточений людьми, які тебе
-                    щиро люблять і поважають.
-                </p>
-                <p>
-                    З Днем Народження, В’ячеславе! Нехай у твоєму житті завжди буде місце для яскравих пригод, теплих
-                    зустрічей та невичерпного натхнення. 🎉
-                </p>
-            </div>
-        </div>
-
+  <div class="section-container">
+    <h2>Побажання</h2>
+    <div class="section-content">
+      <img src="Unknown-3.jpg" alt="Фото 4" class="section-image">
+      <div>
+        <p>
+          В’ячеславе, в цей особливий день хочеться побажати тобі всього найкращого, що може подарувати життя!
+          Нехай здоров’я буде міцним, як скеля, щастя наповнює кожен твій день, а любов і підтримка близьких завжди будуть поруч.
+        </p>
+        <p>
+          Бажаю, щоб кожна твоя мрія ставала реальністю, а всі життєві дороги вели до успіху і нових досягнень.
+          Нехай у твоєму домі завжди буде тепло, затишок і радість, а серце наповнюється гордістю за все, що ти вже досягнув і ще досягнеш.
+        </p>
+        <p>
+          Хай кожен день приносить нові можливості, цікаві знайомства та радісні миті.
+          Будь щасливим, цінуй кожну хвилину життя і пам’ятай, що ти оточений людьми, які тебе щиро люблять і поважають.
+        </p>
+        <p>
+          З Днем Народження, В’ячеславе! Нехай у твоєму житті завжди буде місце для яскравих пригод, теплих зустрічей та невичерпного натхнення. 🎉
+        </p>
+      </div>
     </div>
+  </div>
 </section>
-<footer><p> Дорогий В’ячеславе, нехай твоє життя буде наповнене яскравими моментами, значущими досягненнями та справжнім
-    щастям! Став перед собою великі цілі, мрій сміливо та впевнено рухайся до їх досягнення. Пам’ятай, що найважливіше —
-    залишатися добрим і щирим, адже саме це робить нас справжніми людьми. </p>
-    <p> Будь люблячим і турботливим чоловіком, адже сім’я — це твоя найбільша сила та опора. Ставай найкращим прикладом
-        для свого сина, показуючи йому, як важливо бути чесним, відповідальним і відданим своїм близьким. </p>
-    <p> Цінуй кожну мить, проведену з тими, хто поруч, адже саме ці люди роблять твоє життя особливим. Нехай твоє серце
-        завжди буде відкритим для добра, а душа — для нових звершень і натхнення. Нехай у твоєму житті завжди буде місце
-        для радості, гармонії та любові. </p>
-    <p> З любов’ю і найщирішими побажаннями, нехай цей день стане ще одним кроком до великого та щасливого майбутнього!
-        ❤️ </p><br><br><br><br>
-    <div class="social-modal">
-        <button class="close-modal">×</button>
-        <h3 style="margin-bottom: 1rem; color: var(--secondary-color);">Мої соціальні мережі</h3>
-        <div class="social-links-grid"><a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank"
-                                          class="social-link-item"> <span class="social-icon">📸</span> <span
-                class="social-text">Instagram</span> </a> <a
-                href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank" class="social-link-item">
-            <span class="social-icon">👥</span> <span class="social-text">Facebook</span> </a> <a
-                href="https://t.me/name_lucky_lucky" target="_blank" class="social-link-item"> <span
-                class="social-icon">✈️</span> <span class="social-text">Telegram</span> </a></div>
+
+<footer>
+  <p>
+    Дорогий В’ячеславе, нехай твоє життя буде наповнене яскравими моментами, значущими досягненнями та справжнім щастям!
+    Став перед собою великі цілі, мрій сміливо та впевнено рухайся до їх досягнення. Пам’ятай, що найважливіше — залишатися добрим і щирим, адже саме це робить нас справжніми людьми.
+  </p>
+  <p>
+    Будь люблячим і турботливим чоловіком, адже сім’я — це твоя найбільша сила та опора. Ставай найкращим прикладом для свого сина, показуючи йому, як важливо бути чесним, відповідальним і відданим своїм близьким.
+  </p>
+  <p>
+    Цінуй кожну мить, проведену з тими, хто поруч, адже саме ці люди роблять твоє життя особливим. Нехай твоє серце завжди буде відкритим для добра, а душа — для нових звершень і натхнення.
+    Нехай у твоєму житті завжди буде місце для радості, гармонії та любові.
+  </p>
+  <p>
+    З любов’ю і найщирішими побажаннями, нехай цей день стане ще одним кроком до великого та щасливого майбутнього! ❤️
+  </p><br><br><br><br>
+
+  <div class="social-modal">
+    <button class="close-modal">×</button>
+    <h3 style="margin-bottom: 1rem; color: var(--secondary-color);">Мої соціальні мережі</h3>
+    <div class="social-links-grid">
+      <a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank" class="social-link-item">
+        <span class="social-icon">📸</span>
+        <span class="social-text">Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank" class="social-link-item">
+        <span class="social-icon">👥</span>
+        <span class="social-text">Facebook</span>
+      </a>
+      <a href="https://t.me/name_lucky_lucky" target="_blank" class="social-link-item">
+        <span class="social-icon">✈️</span>
+        <span class="social-text">Telegram</span>
+      </a>
     </div>
-    <div class="author-signature"><span class="author-icon">👨‍💻</span> <span class="author-text">Created by Vadim Kharovyuk | 2025</span>
-        <button class="author-button">Мої контакти</button>
-    </div>
+  </div>
+
+  <div class="author-signature">
+    <span class="author-icon">👨‍💻</span>
+    <span class="author-text">Created by Vadim Kharovyuk | 2025</span>
+    <button class="author-button">Мої контакти</button>
+  </div>
 </footer>
-<script> const authorButton = document.querySelector('.author-button'); const socialModal = document.querySelector('.social-modal'); const closeModal = document.querySelector('.close-modal'); authorButton.addEventListener('click', () => { socialModal.classList.add('active'); }); closeModal.addEventListener('click', () => { socialModal.classList.remove('active'); }); // Закрыть модальное окно при клике вне его window.addEventListener('click', (e) => { if (e.target === socialModal) { socialModal.classList.remove('active'); } }); // Скрипт для переключения меню function toggleMenu() { const navLinks = document.querySelector('.nav-links'); navLinks.classList.toggle('active'); } </script>
+
+<script>
+  // Показать/скрыть модальное окно
+  const authorButton = document.querySelector('.author-button');
+  const socialModal = document.querySelector('.social-modal');
+  const closeModal = document.querySelector('.close-modal');
+
+  authorButton.addEventListener('click', () => {
+    socialModal.classList.add('active');
+  });
+
+  closeModal.addEventListener('click', () => {
+    socialModal.classList.remove('active');
+  });
+
+  // Закрыть модальное окно при клике вне его
+  window.addEventListener('click', (e) => {
+    if (e.target === socialModal) {
+      socialModal.classList.remove('active');
+    }
+  });
+</script>
+<!-- Скрипт для переключения меню -->
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>С Днем Рождения!</title>-->
+<!--    <style>-->
+<!--        :root {-->
+<!--            &#45;&#45;primary-color: #1a1a1a; /* Темный фон */-->
+<!--            &#45;&#45;secondary-color: #1abc9c; /* Бирюзовый акцент */-->
+<!--            &#45;&#45;accent-color: #e74c3c; /* Красный для выделения */-->
+<!--            &#45;&#45;text-light: #ffffff; /* Белый текст */-->
+<!--            &#45;&#45;text-dark: #333333; /* Темный текст */-->
+<!--            &#45;&#45;bg-dark: #121212; /* Темный фон для body */-->
+<!--            &#45;&#45;bg-light: #ffffff; /* Светлый фон */-->
+<!--            &#45;&#45;gradient-start: #1a1a1a; /* Начало градиента */-->
+<!--            &#45;&#45;gradient-end: #1abc9c; /* Бирюзовый конец градиента */-->
+<!--            &#45;&#45;hover-color: #16a085; /* Темно-бирюзовый при наведении */-->
+<!--            &#45;&#45;shadow-color: rgba(0, 0, 0, 0.5); /* Тень */-->
+<!--            &#45;&#45;icon-color: #ffffff; /* Цвет иконок */-->
+<!--            &#45;&#45;icon-hover-color: #1abc9c; /* Бирюзовый при наведении на иконки */-->
+<!--        }-->
+
+<!--        * {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+
+<!--        body {-->
+<!--            font-family: 'Arial', sans-serif;-->
+<!--            background-color: var(&#45;&#45;bg-dark);-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--        }-->
+
+<!--        /* Навигация */-->
+<!--        nav {-->
+<!--            position: fixed;-->
+<!--            width: 100%;-->
+<!--            background-color: var(&#45;&#45;primary-color);-->
+<!--            padding: 1rem;-->
+<!--            z-index: 1000;-->
+<!--            box-shadow: 0 2px 10px var(&#45;&#45;shadow-color);-->
+<!--        }-->
+
+<!--        .nav-container {-->
+<!--            max-width: 1200px;-->
+<!--            margin: 0 auto;-->
+<!--            display: flex;-->
+<!--            justify-content: space-between;-->
+<!--            align-items: center;-->
+<!--        }-->
+
+<!--        .logo {-->
+<!--            font-size: 1.5rem;-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--        }-->
+
+<!--        .nav-links {-->
+<!--            display: flex;-->
+<!--            gap: 2rem;-->
+<!--        }-->
+
+<!--        .nav-links a {-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--            text-decoration: none;-->
+<!--            padding: 0.5rem 1rem;-->
+<!--            border-radius: 4px;-->
+<!--            transition: all 0.3s ease;-->
+<!--        }-->
+
+<!--        .nav-links a:hover {-->
+<!--            background-color: var(&#45;&#45;hover-color);-->
+<!--            transform: translateY(-2px);-->
+<!--        }-->
+
+<!--        /* Иконки */-->
+<!--        .nav-links a i {-->
+<!--            color: var(&#45;&#45;icon-color);-->
+<!--            transition: color 0.3s ease;-->
+<!--        }-->
+
+<!--        .nav-links a:hover i {-->
+<!--            color: var(&#45;&#45;icon-hover-color);-->
+<!--        }-->
+
+<!--        /* Хедер */-->
+<!--        header {-->
+<!--            padding-top: 100px;-->
+<!--            min-height: 100vh;-->
+<!--            background: linear-gradient(135deg, var(&#45;&#45;gradient-start), var(&#45;&#45;gradient-end));-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        .header-content {-->
+<!--            padding: 2rem;-->
+<!--        }-->
+
+<!--        .profile-image {-->
+<!--            width: 450px;-->
+<!--            height: 450px;-->
+<!--            border-radius: 30%;-->
+<!--            border: 4px solid var(&#45;&#45;text-light);-->
+<!--            margin-bottom: 2rem;-->
+<!--            box-shadow: 0 0 20px var(&#45;&#45;shadow-color);-->
+<!--            transition: transform 0.3s ease;-->
+<!--        }-->
+
+<!--        .profile-image:hover {-->
+<!--            transform: scale(1.1);-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            font-size: 3rem;-->
+<!--            margin-bottom: 1rem;-->
+<!--            background: linear-gradient(45deg, var(&#45;&#45;text-light), var(&#45;&#45;secondary-color));-->
+<!--            -webkit-background-clip: text;-->
+<!--            -webkit-text-fill-color: transparent;-->
+<!--        }-->
+
+<!--        h2 {-->
+<!--            font-size: 2.5rem;-->
+<!--            margin-bottom: 1.5rem;-->
+<!--            color: var(&#45;&#45;secondary-color);-->
+<!--        }-->
+
+<!--        /* Секции */-->
+<!--        section {-->
+<!--            padding: 4rem 2rem;-->
+<!--            min-height: 100vh;-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--        }-->
+
+<!--        .section-container {-->
+<!--            max-width: 1200px;-->
+<!--            margin: 0 auto;-->
+<!--            background-color: var(&#45;&#45;primary-color);-->
+<!--            border-radius: 10px;-->
+<!--            padding: 2rem;-->
+<!--            box-shadow: 0 5px 15px var(&#45;&#45;shadow-color);-->
+<!--            transition: all 0.3s ease;-->
+<!--            position: relative;-->
+<!--            overflow: hidden;-->
+<!--        }-->
+
+<!--        .section-container::before {-->
+<!--            content: '';-->
+<!--            position: absolute;-->
+<!--            top: 0;-->
+<!--            left: -100%;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            background: linear-gradient(90deg, transparent, var(&#45;&#45;secondary-color), transparent);-->
+<!--            transition: left 0.5s ease;-->
+<!--        }-->
+
+<!--        .section-container:hover::before {-->
+<!--            left: 100%;-->
+<!--        }-->
+
+<!--        .section-container:hover {-->
+<!--            transform: translateY(-10px);-->
+<!--        }-->
+
+<!--        .section-content {-->
+<!--            display: grid;-->
+<!--            grid-template-columns: 1fr 1fr;-->
+<!--            gap: 2rem;-->
+<!--            align-items: center;-->
+<!--        }-->
+
+<!--        .section-image {-->
+<!--            width: 100%;-->
+<!--            border-radius: 10px;-->
+<!--            transition: transform 0.3s ease;-->
+<!--        }-->
+
+<!--        .section-image:hover {-->
+<!--            transform: scale(1.05);-->
+<!--        }-->
+
+<!--        /* Футер и модальное окно */-->
+<!--        footer {-->
+<!--            background-color: var(&#45;&#45;primary-color);-->
+<!--            padding: 2rem;-->
+<!--            text-align: center;-->
+<!--            position: relative;-->
+<!--        }-->
+
+<!--        .social-modal {-->
+<!--            display: none;-->
+<!--            position: fixed;-->
+<!--            top: 50%;-->
+<!--            left: 50%;-->
+<!--            transform: translate(-50%, -50%);-->
+<!--            background-color: var(&#45;&#45;primary-color);-->
+<!--            padding: 2rem;-->
+<!--            border-radius: 10px;-->
+<!--            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);-->
+<!--            z-index: 1000;-->
+<!--            max-width: 90%;-->
+<!--            width: 400px;-->
+<!--        }-->
+
+<!--        .social-modal.active {-->
+<!--            display: block;-->
+<!--        }-->
+
+<!--        .close-modal {-->
+<!--            position: absolute;-->
+<!--            top: 10px;-->
+<!--            right: 10px;-->
+<!--            background: none;-->
+<!--            border: none;-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--            font-size: 24px;-->
+<!--            cursor: pointer;-->
+<!--            padding: 5px 10px;-->
+<!--        }-->
+
+<!--        .social-links-grid {-->
+<!--            display: grid;-->
+<!--            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));-->
+<!--            gap: 1rem;-->
+<!--            margin-top: 1rem;-->
+<!--        }-->
+
+<!--        .social-link-item {-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            padding: 1rem;-->
+<!--            background-color: rgba(255, 255, 255, 0.1);-->
+<!--            border-radius: 8px;-->
+<!--            text-decoration: none;-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--            transition: all 0.3s ease;-->
+<!--        }-->
+
+<!--        .social-link-item:hover {-->
+<!--            background-color: var(&#45;&#45;hover-color);-->
+<!--            transform: translateY(-3px);-->
+<!--        }-->
+
+<!--        .social-icon {-->
+<!--            font-size: 1.5rem;-->
+<!--            margin-right: 0.5rem;-->
+<!--        }-->
+
+<!--        .social-text {-->
+<!--            font-size: 1rem;-->
+<!--        }-->
+
+<!--        .author-signature {-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            gap: 1rem;-->
+<!--            margin-top: 1rem;-->
+<!--        }-->
+
+<!--        .author-icon {-->
+<!--            font-size: 1.5rem;-->
+<!--        }-->
+
+<!--        .author-text {-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--        }-->
+
+<!--        .author-button {-->
+<!--            background-color: var(&#45;&#45;secondary-color);-->
+<!--            color: var(&#45;&#45;text-light);-->
+<!--            border: none;-->
+<!--            padding: 0.5rem 1rem;-->
+<!--            border-radius: 5px;-->
+<!--            cursor: pointer;-->
+<!--            transition: all 0.3s ease;-->
+<!--        }-->
+
+<!--        .author-button:hover {-->
+<!--            background-color: var(&#45;&#45;hover-color);-->
+<!--            transform: translateY(-2px);-->
+<!--        }-->
+
+<!--        /* Адаптивный дизайн */-->
+<!--        @media (max-width: 768px) {-->
+<!--            .nav-links {-->
+<!--                display: none;-->
+<!--            }-->
+
+<!--            .section-content {-->
+<!--                grid-template-columns: 1fr;-->
+<!--                text-align: center;-->
+<!--            }-->
+
+<!--            .section-image {-->
+<!--                margin: 2rem 0;-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav>-->
+<!--    <div class="nav-container">-->
+<!--        <div class="logo">9 Лютого</div>-->
+<!--        <div class="hamburger-menu" onclick="toggleMenu()">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </div>-->
+<!--        <div class="nav-links">-->
+<!--            <a href="#header"><i class="fas fa-home"></i> Головна</a>-->
+<!--            <a href="#section1"><i class="fas fa-user"></i> Про тебе</a>-->
+<!--            <a href="#section2"><i class="fas fa-trophy"></i> Досягнення</a>-->
+<!--            <a href="#section3"><i class="fas fa-memory"></i> Спогади</a>-->
+<!--            <a href="#section4"><i class="fas fa-gift"></i> Побажання</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--<header id="header">-->
+<!--    <div class="header-content">-->
+<!--        <img src="107920906_277357580238296_718421717253490684_n.jpg" alt="Фото именинника" class="profile-image">-->
+<!--        <h1>З Днем Народження!</h1>-->
+<!--        <p>Нехай цей день буде особливим і незабутнім!</p>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<section id="section1">-->
+<!--    <div class="section-container">-->
+<!--        <h2>Про тебе</h2>-->
+<!--        <div class="section-content">-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    Вячеслав, вітаємо тебе з Днем Народження! 🎉-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Як справжній Водолій, ти людина з великим серцем, неповторною харизмою та непохитною вірою у краще-->
+<!--                    майбутнє.-->
+<!--                    1994 рік подарував світу тебе — добру, щиру й неймовірно талановиту людину.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    У цей особливий день хочемо побажати тобі нескінченного щастя, міцного здоров'я та внутрішньої-->
+<!--                    гармонії.-->
+<!--                    Нехай зірки завжди допомагають тобі у здійсненні найсміливіших мрій і підтримують у найскладніші-->
+<!--                    моменти життя.-->
+<!--                    Як Водолій, ти завжди прагнеш до нового та цікавого — нехай ці прагнення приведуть тебе до-->
+<!--                    неймовірних вершин і подарують тобі незабутні пригоди!-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Нехай цей рік принесе тобі лише радісні моменти, нові відкриття та безліч приводів для гордості.-->
+<!--                    Друзі та близькі завжди будуть поруч, підтримуючи тебе в кожному кроці.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Ти унікальний, Вячеслав! Нехай твоє життя буде наповнене теплом, любов'ю та справжнім щастям.-->
+<!--                    Підкорюй цей світ своєю енергією, розумом і добротою. З Днем Народження! 🎂✨-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <img src="Unknown.jpg" alt="Фото 1" class="section-image">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section id="section2">-->
+<!--    <div class="section-container">-->
+<!--        <h2>Досягнення</h2>-->
+<!--        <div class="section-content">-->
+<!--            <img src="Unknown-4.jpg" alt="Фото 2" class="section-image">-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    В’ячеславе, твоє головне досягнення — це, без сумніву, твоя чудова родина! ❤️-->
+<!--                    Разом із прекрасною дружиною Анною ви створили затишний і теплий дім, сповнений любові,-->
+<!--                    взаєморозуміння та радості.-->
+<!--                    Ваш син Діма, який вже робить свої перші шкільні успіхи, — це відображення вашої турботи, мудрості-->
+<!--                    та любові.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Родина — це не лише велике щастя, але й щоденна праця, терпіння та натхнення.-->
+<!--                    Ти справляєшся з цим завданням як справжній лідер і приклад для своєї сім’ї. Твоя підтримка,-->
+<!--                    відповідальність та любов роблять ваш дім місцем, де панує гармонія.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Нехай ваші сімейні узи з кожним роком стають лише міцнішими, а в домі завжди звучить сміх, щастя та-->
+<!--                    радість.-->
+<!--                    Нехай ваша родина завжди буде оточена теплом, а кожен новий день приносить яскраві спогади.-->
+<!--                    Ти справжній герой для своїх близьких, В’ячеславе, і це твоє найбільше досягнення!-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Бажаємо тобі пишатися кожним моментом життя, адже твоя родина — це твоє найбільше багатство і-->
+<!--                    натхнення.-->
+<!--                    Щастя вам усім, нових успіхів і незабутніх моментів разом!-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section id="section3">-->
+<!--    <div class="section-container">-->
+<!--        <h2>Спогади</h2>-->
+<!--        <div class="section-content">-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    В’ячеславе, дитинство — це той час, який завжди гріє душу, і наші спільні спогади займають у ньому-->
+<!--                    особливе місце.-->
+<!--                    Ми разом ходили до школи, грали в різні дитячі ігри, і кожна наша пригода була незабутньою.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Як чудово було збиратися компанією, вирушати на річку в спекотні літні дні, радіти простим дрібницям-->
+<!--                    і відчувати себе безтурботними.-->
+<!--                    А дискотеки! Скільки веселих моментів, сміху і танців залишилися у наших спогадах. Це були часи,-->
+<!--                    коли ми вчилися дружити, підтримувати одне одного і просто насолоджуватися життям.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Нехай ці спогади завжди залишаються теплом у твоєму серці і нагадують про ті щасливі моменти, які ми-->
+<!--                    ділили разом.-->
+<!--                    Бажаю, щоб твоє життя було сповнене нових яскравих подій, які в майбутньому стануть такими ж цінними-->
+<!--                    спогадами для тебе.-->
+<!--                    Твоє дитинство — це сторінка, яку неможливо забути, і я радий, що мав можливість бути її частиною.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    З Днем Народження, друже! Нехай твої майбутні дні будуть такими ж веселими та світлими, як наше-->
+<!--                    дитинство.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <img src="108832341_277196686921052_5536215817537767666_n.jpg" alt="Фото 3" class="section-image">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section id="section4">-->
+<!--    <div class="section-container">-->
+<!--        <h2>Побажання</h2>-->
+<!--        <div class="section-content">-->
+<!--            <img src="Unknown-3.jpg" alt="Фото 4" class="section-image">-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    В’ячеславе, в цей особливий день хочеться побажати тобі всього найкращого, що може подарувати життя!-->
+<!--                    Нехай здоров’я буде міцним, як скеля, щастя наповнює кожен твій день, а любов і підтримка близьких-->
+<!--                    завжди будуть поруч.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Бажаю, щоб кожна твоя мрія ставала реальністю, а всі життєві дороги вели до успіху і нових-->
+<!--                    досягнень.-->
+<!--                    Нехай у твоєму домі завжди буде тепло, затишок і радість, а серце наповнюється гордістю за все, що-->
+<!--                    ти вже досягнув і ще досягнеш. Нехай кожен день приносить нові можливості, цікаві знайомства та-->
+<!--                    радісні миті. Будь щасливим, цінуй кожну хвилину життя і пам’ятай, що ти оточений людьми, які тебе-->
+<!--                    щиро люблять і поважають.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    З Днем Народження, В’ячеславе! Нехай у твоєму житті завжди буде місце для яскравих пригод, теплих-->
+<!--                    зустрічей та невичерпного натхнення. 🎉-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</section>-->
+<!--<footer><p> Дорогий В’ячеславе, нехай твоє життя буде наповнене яскравими моментами, значущими досягненнями та справжнім-->
+<!--    щастям! Став перед собою великі цілі, мрій сміливо та впевнено рухайся до їх досягнення. Пам’ятай, що найважливіше —-->
+<!--    залишатися добрим і щирим, адже саме це робить нас справжніми людьми. </p>-->
+<!--    <p> Будь люблячим і турботливим чоловіком, адже сім’я — це твоя найбільша сила та опора. Ставай найкращим прикладом-->
+<!--        для свого сина, показуючи йому, як важливо бути чесним, відповідальним і відданим своїм близьким. </p>-->
+<!--    <p> Цінуй кожну мить, проведену з тими, хто поруч, адже саме ці люди роблять твоє життя особливим. Нехай твоє серце-->
+<!--        завжди буде відкритим для добра, а душа — для нових звершень і натхнення. Нехай у твоєму житті завжди буде місце-->
+<!--        для радості, гармонії та любові. </p>-->
+<!--    <p> З любов’ю і найщирішими побажаннями, нехай цей день стане ще одним кроком до великого та щасливого майбутнього!-->
+<!--        ❤️ </p><br><br><br><br>-->
+<!--    <div class="social-modal">-->
+<!--        <button class="close-modal">×</button>-->
+<!--        <h3 style="margin-bottom: 1rem; color: var(&#45;&#45;secondary-color);">Мої соціальні мережі</h3>-->
+<!--        <div class="social-links-grid"><a href="https://www.instagram.com/name_lucky_lucky_/" target="_blank"-->
+<!--                                          class="social-link-item"> <span class="social-icon">📸</span> <span-->
+<!--                class="social-text">Instagram</span> </a> <a-->
+<!--                href="https://www.facebook.com/profile.php?id=100009226154613" target="_blank" class="social-link-item">-->
+<!--            <span class="social-icon">👥</span> <span class="social-text">Facebook</span> </a> <a-->
+<!--                href="https://t.me/name_lucky_lucky" target="_blank" class="social-link-item"> <span-->
+<!--                class="social-icon">✈️</span> <span class="social-text">Telegram</span> </a></div>-->
+<!--    </div>-->
+<!--    <div class="author-signature"><span class="author-icon">👨‍💻</span> <span class="author-text">Created by Vadim Kharovyuk | 2025</span>-->
+<!--        <button class="author-button">Мої контакти</button>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--<script> const authorButton = document.querySelector('.author-button'); const socialModal = document.querySelector('.social-modal'); const closeModal = document.querySelector('.close-modal'); authorButton.addEventListener('click', () => { socialModal.classList.add('active'); }); closeModal.addEventListener('click', () => { socialModal.classList.remove('active'); }); // Закрыть модальное окно при клике вне его window.addEventListener('click', (e) => { if (e.target === socialModal) { socialModal.classList.remove('active'); } }); // Скрипт для переключения меню function toggleMenu() { const navLinks = document.querySelector('.nav-links'); navLinks.classList.toggle('active'); } </script>-->
+<!--</body>-->
+<!--</html>-->
