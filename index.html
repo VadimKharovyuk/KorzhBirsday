@@ -677,6 +677,9 @@
 <!--</body>-->
 <!--</html>-->
 
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -686,18 +689,18 @@
     <style>
         :root {
             --primary-color: #1a1a1a; /* Темный фон */
-            --secondary-color: #3498db; /* Акцентный цвет */
-            --accent-color: #e74c3c; /* Цвет для выделения */
+            --secondary-color: #1abc9c; /* Бирюзовый акцент */
+            --accent-color: #e74c3c; /* Красный для выделения */
             --text-light: #ffffff; /* Белый текст */
             --text-dark: #333333; /* Темный текст */
             --bg-dark: #121212; /* Темный фон для body */
             --bg-light: #ffffff; /* Светлый фон */
-            --gradient-start: #2c3e50; /* Начало градиента */
-            --gradient-end: #3498db; /* Конец градиента */
-            --hover-color: #e74c3c; /* Цвет при наведении */
+            --gradient-start: #1a1a1a; /* Начало градиента */
+            --gradient-end: #1abc9c; /* Бирюзовый конец градиента */
+            --hover-color: #16a085; /* Темно-бирюзовый при наведении */
             --shadow-color: rgba(0, 0, 0, 0.5); /* Тень */
             --icon-color: #ffffff; /* Цвет иконок */
-            --icon-hover-color: #e74c3c; /* Цвет иконок при наведении */
+            --icon-hover-color: #1abc9c; /* Бирюзовый при наведении на иконки */
         }
 
         * {
@@ -779,8 +782,8 @@
         }
 
         .profile-image {
-            width: 600px;
-            height: 600px;
+            width: 450px;
+            height: 450px;
             border-radius: 30%;
             border: 4px solid var(--text-light);
             margin-bottom: 2rem;
@@ -821,7 +824,24 @@
             border-radius: 10px;
             padding: 2rem;
             box-shadow: 0 5px 15px var(--shadow-color);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .section-container:hover::before {
+            left: 100%;
         }
 
         .section-container:hover {
