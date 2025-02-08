@@ -493,6 +493,47 @@
     section {
       animation: fadeIn 1s ease-out;
     }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .photo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-description {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #f1eeee;
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .photo-item {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -629,6 +670,33 @@
         </p>
         <p>
           З Днем Народження, В’ячеславе! Нехай у твоєму житті завжди буде місце для яскравих пригод, теплих зустрічей та невичерпного натхнення. 🎉
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="section5">
+  <div class="section-container">
+    <h2>Щасливі моменти життя</h2>
+    <div class="photo-grid">
+      <div class="photo-item">
+        <img src="new1.jpg" alt="Фото 5" class="gallery-image">
+        <p class="photo-description">
+          Щасливі моменти життя роблять нас сильнішими. Кожна усмішка - це промінь сонця, що зігріває серце та дарує натхнення рухатися вперед.
+        </p>
+      </div>
+      <div class="photo-item">
+        <img src="new3.jpg" alt="Фото 6" class="gallery-image">
+        <p class="photo-description">
+          Дружба - це той скарб, який з роками стає лише ціннішим. Вона підтримує нас у важкі часи та розділяє радість успіху.
+        </p>
+      </div>
+      <div class="photo-item">
+        <img src="new2.jpg" alt="Фото 7" class="gallery-image">
+        <p class="photo-description">
+          Кожен новий день - це можливість створити щось особливе, зробити світ кращим та досягти нових вершин у житті.
         </p>
       </div>
     </div>
